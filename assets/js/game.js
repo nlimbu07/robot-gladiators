@@ -59,6 +59,7 @@ var fight = function(enemyName) {
     }
 };
 
+// function to start a new game
 for(var i = 0; i < enemyNames.length; i++) {
     if (playerHealth > 0) {
         // let player know what round they are in, remember that arrays start at 0 so it needs to have 1 added to it
@@ -74,7 +75,7 @@ for(var i = 0; i < enemyNames.length; i++) {
         // debugger;
 
         // pass the pickedEnemyName variable's value into the fight function, where it will assume the value of the enemyName parameter
-        fight(enemyNames[i]);
+        fight(pickedEnemyName);
     } 
     else {
         window.alert("You have lost your robot in battle! Game Over!");
